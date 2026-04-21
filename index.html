@@ -8,70 +8,173 @@
 <link rel="icon" href="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=64&height=64" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Poppins', sans-serif; color: #1D1D1D; background: #fff; }
-  .nav { background: #fff; border-bottom: 1px solid #eee; padding: 16px 0; }
-  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
-  .nav-logo { height: 32px; }
-  .nav-links { display: flex; gap: 24px; align-items: center; }
-  .nav-links a { text-decoration: none; color: #1D1D1D; font-size: 14px; font-weight: 500; }
-  .nav-links a:hover { color: #0865FC; }
-  .nav-cta { background: #0865FC; color: #fff !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1.6;background:#fff}
 
-  .hero { background: #141414; color: #fff; padding: 100px 24px; text-align: center; }
-  .hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 700; margin-bottom: 16px; }
-  .hero h1 span { color: #0865FC; }
-  .hero p { color: #999; font-size: 18px; font-weight: 300; max-width: 500px; margin: 0 auto; }
+/* Nav - matches localhowl.com */
+.nav{background:#fff;padding:18px 0;position:sticky;top:0;z-index:100;border-bottom:1px solid #f0f0f0}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#141414}
+.nav-logo img{height:36px}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{text-decoration:none;color:#141414;font-size:14px;font-weight:400}
+.nav-links a:hover{color:#0865FC}
+.nav-cta{background:#0865FC !important;color:#fff !important;padding:12px 22px;border-radius:8px;font-weight:500;font-size:13px !important;letter-spacing:0.3px}
+.nav-cta:hover{background:#0654d4 !important}
+@media(max-width:768px){.nav-links{display:none}}
 
-  .cases { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
-  .case-card { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; background: #F4F4F4; border-radius: 16px; overflow: hidden; margin-bottom: 32px; }
-  .case-card img { width: 100%; height: 300px; object-fit: cover; }
-  .case-info { padding: 40px; }
-  .case-info .badge { display: inline-block; background: rgba(8,101,252,0.1); color: #0865FC; font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
-  .case-info h3 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
-  .case-info p { color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 20px; }
-  .case-link { display: inline-block; background: #0865FC; color: #fff; padding: 12px 28px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; }
-  .case-link:hover { background: #0654d4; }
+/* Hero */
+.hero{background:#141414;color:#fff;padding:120px 30px 100px;text-align:center}
+.hero h1{font-size:clamp(32px,5vw,64px);font-weight:400;letter-spacing:-1.28px;max-width:700px;margin:0 auto 20px;line-height:1.1}
+.hero h1 span{color:#0865FC}
+.hero p{font-size:16px;color:#888;max-width:480px;margin:0 auto 40px;font-weight:300;line-height:1.7}
+.hero-buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn-blue{display:inline-block;background:#0865FC;color:#fff;padding:14px 28px;border-radius:8px;font-weight:500;font-size:14px;text-decoration:none;transition:background 0.2s}
+.btn-blue:hover{background:#0654d4}
+.btn-outline-white{display:inline-block;border:1.5px solid #444;color:#fff;padding:13px 28px;border-radius:8px;font-weight:400;font-size:14px;text-decoration:none;transition:border-color 0.2s}
+.btn-outline-white:hover{border-color:#fff}
 
-  @media (max-width: 768px) { .case-card { grid-template-columns: 1fr; } .case-card img { height: 200px; } }
+/* Cases Grid */
+.cases{max-width:1200px;margin:0 auto;padding:80px 30px}
+.cases-header{text-align:center;margin-bottom:60px}
+.cases-header h2{font-size:43px;font-weight:500;letter-spacing:-1.29px;margin-bottom:12px}
+.cases-header p{color:#666;font-size:15px;max-width:460px;margin:0 auto}
 
-  .footer { background: #0D0D0D; color: #666; padding: 40px 24px; text-align: center; font-size: 13px; }
-  .footer a { color: #0865FC; text-decoration: none; }
+.case-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#F4F4F4;border-radius:12px;overflow:hidden;margin-bottom:40px;transition:transform 0.2s,box-shadow 0.2s}
+.case-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
+.case-card img{width:100%;height:100%;min-height:340px;object-fit:cover;display:block}
+.case-info{padding:48px 40px;display:flex;flex-direction:column;justify-content:center}
+.case-badge{display:inline-block;background:rgba(8,101,252,0.08);color:#0865FC;font-size:11px;font-weight:600;padding:5px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1.2px;margin-bottom:16px;width:fit-content}
+.case-info h3{font-size:28px;font-weight:500;letter-spacing:-0.56px;margin-bottom:10px;line-height:1.2}
+.case-info .location{font-size:13px;color:#888;margin-bottom:16px}
+.case-info p{color:#555;font-size:14px;line-height:1.7;margin-bottom:24px}
+.case-link{display:inline-flex;align-items:center;gap:8px;color:#0865FC;font-weight:500;font-size:14px;text-decoration:none;transition:gap 0.2s}
+.case-link:hover{gap:12px}
+.case-link svg{width:16px;height:16px}
+@media(max-width:768px){.case-card{grid-template-columns:1fr}.case-card img{min-height:220px}}
+
+/* CTA Section */
+.cta-section{background:#F4F4F4;padding:100px 30px;text-align:center}
+.cta-section h2{font-size:43px;font-weight:500;letter-spacing:-1.29px;margin-bottom:16px}
+.cta-section p{color:#666;max-width:440px;margin:0 auto 36px;font-size:15px}
+
+/* Footer - matches localhowl.com */
+.footer{background:#141414;color:#fff;padding:60px 30px 30px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr 1fr;gap:40px}
+.footer-brand p{color:#888;font-size:12px;line-height:1.7;margin:16px 0 20px;max-width:220px}
+.footer-brand .wordmark{font-size:18px;font-weight:700;letter-spacing:3px}
+.footer-brand .wordmark span{color:#0865FC}
+.btn-outline-footer{display:inline-block;border:1.5px solid #444;color:#fff;padding:10px 20px;border-radius:8px;font-size:12px;text-decoration:none;transition:border-color 0.2s}
+.btn-outline-footer:hover{border-color:#fff}
+.footer-col h4{font-size:13px;font-weight:600;margin-bottom:16px;color:#fff}
+.footer-col a{display:block;color:#888;font-size:12px;text-decoration:none;margin-bottom:10px;transition:color 0.2s}
+.footer-col a:hover{color:#fff}
+.footer-social{display:flex;gap:12px;margin-top:16px}
+.footer-social a{color:#888;transition:color 0.2s}
+.footer-social a:hover{color:#fff}
+.footer-bottom{max-width:1200px;margin:40px auto 0;padding-top:20px;border-top:1px solid #2a2a2a;font-size:11px;color:#555}
+@media(max-width:768px){.footer-inner{grid-template-columns:1fr 1fr;gap:30px}}
 </style>
 </head>
 <body>
 
 <nav class="nav">
   <div class="nav-inner">
-    <a href="https://www.localhowl.com"><img src="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=400" alt="Local Howl" class="nav-logo"></a>
+    <a href="https://www.localhowl.com" class="nav-logo">
+      <img src="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=400" alt="Local Howl">
+    </a>
     <div class="nav-links">
       <a href="https://www.localhowl.com/#services">Services</a>
       <a href="https://www.localhowl.com/plans">Plans</a>
-      <a href="https://success.localhowl.com">Case Studies</a>
-      <a href="https://www.localhowl.com/#contact" class="nav-cta">Get Started</a>
+      <a href="https://www.localhowl.com/#resources">Resources</a>
+      <a href="https://www.localhowl.com/#tools">Tools</a>
+      <a href="https://www.localhowl.com/#contact" class="nav-cta">Request A FREE AUDIT</a>
     </div>
   </div>
 </nav>
 
 <section class="hero">
-  <h1>Client <span>Success Stories</span></h1>
-  <p>Real transformations. Real results. See what Local Howl does for local businesses.</p>
+  <h1>Client <span>Success</span> Stories</h1>
+  <p>Real transformations. Real results. See what happens when local businesses partner with Local Howl.</p>
+  <div class="hero-buttons">
+    <a href="#cases" class="btn-blue">See Case Studies</a>
+    <a href="https://www.localhowl.com/#contact" class="btn-outline-white">Get Your Free Audit</a>
+  </div>
 </section>
 
-<section class="cases">
+<section class="cases" id="cases">
+  <div class="cases-header">
+    <h2>Featured Projects</h2>
+    <p>Every business is different. Here's how we tailored our approach to deliver results.</p>
+  </div>
+
   <div class="case-card">
-    <img src="after.png" alt="Margo West Bridal Couture redesigned website">
+    <img src="after.png" alt="Margo West Bridal Couture - redesigned luxury website">
     <div class="case-info">
-      <span class="badge">Bridal Couture</span>
+      <span class="case-badge">Website Redesign</span>
       <h3>Margo West Bridal Couture</h3>
-      <p>Transformed a generic Divi template into a luxury design atelier website that matches 40 years of couture craftsmanship. Dark palette, texture photography, founder storytelling.</p>
-      <a href="margo-west" class="case-link">Read Case Study</a>
+      <div class="location">Dallas Design District, Texas</div>
+      <p>Transformed a generic Divi template into a luxury design atelier that reflects 40 years of couture craftsmanship. Dark palette, texture photography, founder-forward storytelling.</p>
+      <a href="margo-west" class="case-link">
+        Read the full story
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
+<section class="cta-section">
+  <h2>Ready to grow?</h2>
+  <p>Let's see where you rank and find the opportunities your competitors are missing.</p>
+  <a href="https://www.localhowl.com/#contact" class="btn-blue">Request A FREE AUDIT</a>
+</section>
+
 <footer class="footer">
-  <p>&copy; 2026 <a href="https://www.localhowl.com">Local Howl</a>. All rights reserved. | <a href="https://www.localhowl.com/privacy-policy">Privacy</a></p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="wordmark">LOCAL H<span>O</span>WL</div>
+      <p>Local Howl helps local businesses show up where it counts: on Google, in the Map Pack, and in front of ready-to-book customers.</p>
+      <a href="https://www.localhowl.com/#contact" class="btn-outline-footer">Book A Discovery Call</a>
+      <div class="footer-social">
+        <a href="#">G</a>
+        <a href="#">f</a>
+        <a href="#">in</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Contact</h4>
+      <a href="tel:+18562809614">+1 856 280 9614</a>
+      <a href="mailto:info@localhowl.com">info@localhowl.com</a>
+      <a href="#">Monday-Friday<br>9AM - 9PM (EST)</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="https://www.localhowl.com/#services">Keyword Research</a>
+      <a href="https://www.localhowl.com/#services">Maps & GBP Optimization</a>
+      <a href="https://www.localhowl.com/#services">Local Citations</a>
+      <a href="https://www.localhowl.com/#services">Reputation Management</a>
+      <a href="https://www.localhowl.com/#services">Competitor Analysis</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="https://www.localhowl.com/plans">Plans & Pricing</a>
+      <a href="#">Help & FAQs</a>
+      <a href="#">News & Media</a>
+      <a href="https://www.localhowl.com/#contact">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Howl IQ</h4>
+      <a href="#">Local SEO Audit</a>
+      <a href="#">Citation Audit</a>
+      <a href="#">AI Ready Tool</a>
+      <a href="#">Ask Howl IQ</a>
+      <a href="#">ROI Calculator</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2026 Local Howl, All Rights Reserved.
+  </div>
 </footer>
 
 </body>
