@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Margo West Bridal Couture - Case Study | Local Howl</title>
+<meta name="description" content="How Local Howl transformed Margo West Bridal Couture from a generic template to a luxury design atelier website. Dallas bridal website case study.">
+<meta property="og:title" content="Case Study: Margo West Bridal Couture | Local Howl">
+<meta property="og:description" content="From template bridal site to luxury design atelier. See the before and after.">
+<meta property="og:image" content="after.png">
+<link rel="canonical" href="https://success.localhowl.com/margo-west">
+<link rel="icon" href="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=64&height=64" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Poppins', sans-serif; color: #1D1D1D; background: #fff; line-height: 1.7; }
+
+  /* Nav */
+  .nav { background: #fff; border-bottom: 1px solid #eee; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; }
+  .nav-logo { height: 32px; }
+  .nav-links { display: flex; gap: 24px; align-items: center; }
+  .nav-links a { text-decoration: none; color: #1D1D1D; font-size: 14px; font-weight: 500; }
+  .nav-links a:hover { color: #0865FC; }
+  .nav-cta { background: #0865FC; color: #fff !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+  .nav-cta:hover { background: #0654d4; }
+
+  /* Hero */
+  .hero { background: #141414; color: #fff; padding: 100px 24px 80px; text-align: center; }
+  .hero-badge { display: inline-block; background: rgba(8,101,252,0.15); color: #0865FC; font-size: 12px; font-weight: 600; padding: 6px 16px; border-radius: 20px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; }
+  .hero h1 { font-size: clamp(36px, 5vw, 56px); font-weight: 700; line-height: 1.15; max-width: 800px; margin: 0 auto 20px; }
+  .hero h1 span { color: #0865FC; }
+  .hero p { font-size: 18px; color: #999; max-width: 600px; margin: 0 auto 40px; font-weight: 300; }
+  .hero-meta { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; }
+  .hero-meta-item { text-align: center; }
+  .hero-meta-item .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #666; margin-bottom: 4px; }
+  .hero-meta-item .value { font-size: 16px; font-weight: 600; color: #fff; }
+
+  /* Sections */
+  .section { max-width: 1100px; margin: 0 auto; padding: 80px 24px; }
+  .section-dark { background: #141414; color: #fff; }
+  .section-light { background: #F4F4F4; }
+  .section-full { max-width: 100%; }
+
+  h2 { font-size: clamp(28px, 3.5vw, 40px); font-weight: 700; margin-bottom: 16px; line-height: 1.2; }
+  h3 { font-size: 22px; font-weight: 600; margin-bottom: 12px; }
+  .subtitle { color: #0865FC; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+
+  /* Before/After */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin: 48px 0; }
+  @media (max-width: 768px) { .compare { grid-template-columns: 1fr; } }
+  .compare-card { border-radius: 16px; overflow: hidden; box-shadow: 0 8px 40px rgba(0,0,0,0.12); }
+  .compare-card img { width: 100%; display: block; }
+  .compare-label { padding: 16px 24px; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+  .compare-before .compare-label { background: #fee2e2; color: #b91c1c; }
+  .compare-after .compare-label { background: #dcfce7; color: #15803d; }
+  .compare-dot { width: 8px; height: 8px; border-radius: 50%; }
+  .compare-before .compare-dot { background: #ef4444; }
+  .compare-after .compare-dot { background: #22c55e; }
+
+  /* Challenge/Solution */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin: 40px 0; }
+  @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+  .card { background: #fff; border-radius: 16px; padding: 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+  .card-dark { background: #1D1D1D; color: #fff; }
+
+  /* Stats */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 48px 0; }
+  @media (max-width: 768px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+  .stat { text-align: center; padding: 32px 16px; background: #fff; border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+  .stat-value { font-size: 36px; font-weight: 800; color: #0865FC; margin-bottom: 4px; }
+  .stat-label { font-size: 13px; color: #666; font-weight: 500; }
+
+  /* List */
+  .check-list { list-style: none; padding: 0; }
+  .check-list li { padding: 8px 0; padding-left: 28px; position: relative; font-size: 15px; color: #444; }
+  .check-list li::before { content: ''; position: absolute; left: 0; top: 14px; width: 16px; height: 16px; background: #0865FC; border-radius: 50%; }
+  .check-list li::after { content: ''; position: absolute; left: 4px; top: 18px; width: 8px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: rotate(-45deg); }
+
+  /* Quote */
+  .quote { background: linear-gradient(135deg, #0865FC 0%, #0654d4 100%); color: #fff; border-radius: 16px; padding: 48px; margin: 48px 0; text-align: center; }
+  .quote-text { font-size: 22px; font-weight: 300; line-height: 1.6; font-style: italic; max-width: 700px; margin: 0 auto 16px; }
+  .quote-author { font-size: 14px; font-weight: 600; opacity: 0.8; }
+
+  /* Tech stack */
+  .tech-grid { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0; }
+  .tech-tag { background: #F4F4F4; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 500; color: #444; }
+
+  /* CTA */
+  .cta-section { background: #141414; color: #fff; padding: 80px 24px; text-align: center; }
+  .cta-section h2 { color: #fff; }
+  .cta-section p { color: #999; max-width: 500px; margin: 0 auto 32px; }
+  .btn-primary { display: inline-block; background: #0865FC; color: #fff; padding: 16px 40px; border-radius: 8px; font-weight: 600; font-size: 16px; text-decoration: none; transition: background 0.2s; }
+  .btn-primary:hover { background: #0654d4; }
+  .btn-outline { display: inline-block; border: 2px solid rgba(255,255,255,0.3); color: #fff; padding: 14px 40px; border-radius: 8px; font-weight: 500; font-size: 16px; text-decoration: none; margin-left: 16px; transition: border-color 0.2s; }
+  .btn-outline:hover { border-color: #fff; }
+
+  /* Footer */
+  .footer { background: #0D0D0D; color: #666; padding: 40px 24px; text-align: center; font-size: 13px; }
+  .footer a { color: #0865FC; text-decoration: none; }
+
+  /* Divider */
+  .divider { width: 60px; height: 3px; background: #0865FC; margin: 24px 0; border-radius: 2px; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Margo West Bridal Couture - Website Redesign Case Study",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Local Howl",
+    "url": "https://www.localhowl.com"
+  },
+  "datePublished": "2026-04-20",
+  "description": "How Local Howl transformed Margo West Bridal Couture from a generic template to a luxury design atelier website."
+}
+</script>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="https://www.localhowl.com"><img src="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=400" alt="Local Howl" class="nav-logo"></a>
+    <div class="nav-links">
+      <a href="https://www.localhowl.com/#services">Services</a>
+      <a href="https://www.localhowl.com/plans">Plans</a>
+      <a href="https://success.localhowl.com">Case Studies</a>
+      <a href="https://www.localhowl.com/#contact" class="nav-cta">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge">Case Study</div>
+  <h1>From Template to <span>Luxury Atelier</span></h1>
+  <p>How we transformed Margo West Bridal Couture's web presence to match 40 years of couture craftsmanship.</p>
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="label">Client</div>
+      <div class="value">Margo West</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="label">Industry</div>
+      <div class="value">Bridal Couture</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="label">Location</div>
+      <div class="value">Dallas, TX</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="label">Timeline</div>
+      <div class="value">2 Weeks</div>
+    </div>
+  </div>
+</section>
+
+<!-- Before/After -->
+<section class="section">
+  <div class="subtitle">The Transformation</div>
+  <h2>Before & After</h2>
+  <p style="color:#666; max-width:600px;">Same business, completely different impression. The redesign positions Margo West as the couture atelier she is, not just another bridal boutique.</p>
+
+  <div class="compare">
+    <div class="compare-card compare-before">
+      <img src="before.png" alt="Margo West original website - generic Divi template with stock bridal look">
+      <div class="compare-label"><span class="compare-dot"></span> Before: Generic Divi Template</div>
+    </div>
+    <div class="compare-card compare-after">
+      <img src="after.png" alt="Margo West redesigned website - luxury dark palette with couture craftsmanship messaging">
+      <div class="compare-label"><span class="compare-dot"></span> After: Luxury Design Atelier</div>
+    </div>
+  </div>
+</section>
+
+<!-- Challenge -->
+<section class="section section-light section-full">
+  <div class="section" style="padding-top:0; padding-bottom:0;">
+    <div class="two-col">
+      <div>
+        <div class="subtitle">The Challenge</div>
+        <h2>A 40-Year Legacy Deserved Better</h2>
+        <div class="divider"></div>
+        <p style="color:#666;">Margo West has been a fixture in Dallas bridal couture since 1984. But their website told a different story. Built on a standard Divi template, it looked like every other bridal boutique online.</p>
+      </div>
+      <div>
+        <ul class="check-list" style="margin-top:40px;">
+          <li>Generic bridal template that blended in with competitors</li>
+          <li>No clear service differentiation (alterations, custom gowns, preservation)</li>
+          <li>Missing founder story and 40-year heritage messaging</li>
+          <li>No online booking integration (phone-only)</li>
+          <li>Weak SEO structure with no schema markup</li>
+          <li>Slow page load times on mobile</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solution -->
+<section class="section">
+  <div class="subtitle">The Solution</div>
+  <h2>Design That Tells the Story</h2>
+  <div class="divider"></div>
+  <p style="color:#666; max-width:700px; margin-bottom:40px;">We rejected every bridal website cliche. No white backgrounds. No stock roses. No generic serif fonts. Instead, we built a site that feels like walking into a couture atelier.</p>
+
+  <div class="two-col">
+    <div class="card">
+      <h3>Dark Over Light</h3>
+      <p style="color:#666; font-size:15px;">Deep green and navy palette with gold typography. In a sea of white bridal websites, Margo West now stands out instantly. The dark palette signals luxury and sophistication.</p>
+    </div>
+    <div class="card">
+      <h3>Texture Over Text</h3>
+      <p style="color:#666; font-size:15px;">Macro photography of actual couture beadwork replaces generic model shots. Visitors feel the craftsmanship before reading a single word.</p>
+    </div>
+    <div class="card">
+      <h3>Craft Over Commerce</h3>
+      <p style="color:#666; font-size:15px;">"We do the alterations other designers won't" leads with capability, not inventory. Positions Margo West as a design studio, not a dress shop.</p>
+    </div>
+    <div class="card">
+      <h3>Heritage Over Hype</h3>
+      <p style="color:#666; font-size:15px;">The founder's 40-year journey is front and center. Trust earned through decades of work, not marketing speak.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section section-dark section-full">
+  <div class="section" style="padding-top:0; padding-bottom:0;">
+    <div class="subtitle" style="color:#0865FC;">The Results</div>
+    <h2 style="color:#fff;">Measurable Impact</h2>
+
+    <div class="stats">
+      <div class="stat" style="background:#1D1D1D;">
+        <div class="stat-value">57%</div>
+        <div class="stat-label" style="color:#999;">Faster Load Time</div>
+      </div>
+      <div class="stat" style="background:#1D1D1D;">
+        <div class="stat-value">91</div>
+        <div class="stat-label" style="color:#999;">Mobile Lighthouse Score</div>
+      </div>
+      <div class="stat" style="background:#1D1D1D;">
+        <div class="stat-value">4x</div>
+        <div class="stat-label" style="color:#999;">Service Pages (vs 1)</div>
+      </div>
+      <div class="stat" style="background:#1D1D1D;">
+        <div class="stat-value">24/7</div>
+        <div class="stat-label" style="color:#999;">Online Booking</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech -->
+<section class="section">
+  <div class="subtitle">Built With</div>
+  <h2>Enterprise-Grade Infrastructure</h2>
+  <p style="color:#666; max-width:600px; margin-bottom:24px;">Every technical decision was made to ensure speed, security, and ease of management.</p>
+
+  <div class="tech-grid">
+    <span class="tech-tag">Local Howl WIAB</span>
+    <span class="tech-tag">WordPress</span>
+    <span class="tech-tag">WP Engine Hosting</span>
+    <span class="tech-tag">Elementor Pro</span>
+    <span class="tech-tag">Calendly Booking</span>
+    <span class="tech-tag">GA4 Analytics</span>
+    <span class="tech-tag">Microsoft Clarity</span>
+    <span class="tech-tag">Schema.org Markup</span>
+    <span class="tech-tag">Accessibility (ea11y)</span>
+    <span class="tech-tag">IndexNow</span>
+  </div>
+</section>
+
+<!-- Quote -->
+<section class="section" style="padding-top:0;">
+  <div class="quote">
+    <div class="quote-text">"Most bridal websites look the same. Margo West's rebrand rejected every cliche and created something that actually reflects 40 years of couture craftsmanship."</div>
+    <div class="quote-author">Local Howl Design Team</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to Transform Your Website?</h2>
+  <p>See what Local Howl can do for your business. Get a free audit and discover your growth potential.</p>
+  <a href="https://www.localhowl.com/#contact" class="btn-primary">Request a Free Audit</a>
+  <a href="https://www.localhowl.com/plans" class="btn-outline">See Plans</a>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2026 <a href="https://www.localhowl.com">Local Howl</a>. All rights reserved. | <a href="https://www.localhowl.com/privacy-policy">Privacy</a></p>
+</footer>
+
+</body>
+</html>
