@@ -3,25 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Success Stories | Local Howl</title>
-<meta name="description" content="See how Local Howl transforms local businesses with SEO, web design, and digital marketing. Real results from real clients.">
+<title>Client Success Stories | Local Howl</title>
+<meta name="description" content="See how Local Howl transforms local businesses with SEO, web design, and digital marketing. Real results from real clients across 10 industries.">
+<link rel="canonical" href="https://success.localhowl.com/">
 <link rel="icon" href="https://framerusercontent.com/images/Bk5aaj2JhRbhDQr7CBsBme4PvU.png" type="image/png">
+<!-- OG -->
+<meta property="og:title" content="Client Success Stories | Local Howl">
+<meta property="og:description" content="Real transformations. Real results. See what happens when local businesses partner with Local Howl.">
+<meta property="og:url" content="https://success.localhowl.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Local Howl">
+<meta property="og:image" content="https://success.localhowl.com/after.png">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="900">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Client Success Stories | Local Howl">
+<meta name="twitter:description" content="Real transformations. Real results. See what happens when local businesses partner with Local Howl.">
+<meta name="twitter:image" content="https://success.localhowl.com/after.png">
+<!-- Geo -->
+<meta name="geo.region" content="US-NJ">
+<meta name="geo.placename" content="New Jersey">
+<!-- Preconnect -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Local Howl",
+      "url": "https://www.localhowl.com",
+      "logo": "https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png",
+      "sameAs": ["https://www.facebook.com/localhowl", "https://www.instagram.com/localhowl"],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-856-280-9614",
+        "contactType": "sales",
+        "email": "info@localhowl.com"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Client Success Stories",
+      "description": "Case studies showcasing website redesigns, platform migrations, and full rebrands by Local Howl.",
+      "url": "https://success.localhowl.com/",
+      "publisher": { "@type": "Organization", "name": "Local Howl" }
+    }
+  ]
+}
+</script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1.6;background:#fff}
 
-/* Nav - matches localhowl.com */
+/* Skip nav */
+.skip-nav{position:absolute;top:-100%;left:16px;background:#0865FC;color:#fff;padding:12px 24px;border-radius:8px;z-index:200;font-weight:500;text-decoration:none}
+.skip-nav:focus{top:16px}
+
+/* Nav */
 .nav{background:#fff;padding:18px 0;position:sticky;top:0;z-index:100;border-bottom:1px solid #f0f0f0}
 .nav-inner{max-width:1200px;margin:0 auto;padding:0 30px;display:flex;align-items:center;justify-content:space-between}
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:#141414}
-.nav-logo img{height:36px}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo img{height:36px;width:auto}
 .nav-links{display:flex;gap:28px;align-items:center}
-.nav-links a{text-decoration:none;color:#141414;font-size:14px;font-weight:400}
+.nav-links a{text-decoration:none;color:#141414;font-size:14px;font-weight:400;transition:color .2s}
 .nav-links a:hover{color:#0865FC}
-.nav-cta{background:#0865FC !important;color:#fff !important;padding:12px 22px;border-radius:8px;font-weight:500;font-size:13px !important;letter-spacing:0.3px}
+.nav-cta{background:#0865FC !important;color:#fff !important;padding:12px 22px;border-radius:8px;font-weight:500;font-size:13px !important;letter-spacing:0.3px;transition:background .2s}
 .nav-cta:hover{background:#0654d4 !important}
-@media(max-width:768px){.nav-links{display:none}}
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.hamburger svg{width:24px;height:24px;color:#141414}
+@media(max-width:768px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:20px 30px;gap:16px;border-bottom:1px solid #f0f0f0;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+  .nav-links.open{display:flex}
+  .hamburger{display:block}
+}
 
 /* Hero */
 .hero{background:#141414;color:#fff;padding:120px 30px 100px;text-align:center}
@@ -34,12 +93,19 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
 .btn-outline-white{display:inline-block;border:1.5px solid #444;color:#fff;padding:13px 28px;border-radius:8px;font-weight:400;font-size:14px;text-decoration:none;transition:border-color 0.2s}
 .btn-outline-white:hover{border-color:#fff}
 
+/* Stats Bar */
+.stats-bar{background:#0865FC;padding:0 30px;margin-top:-2rem;position:relative;z-index:4}
+.stats-bar-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);border-radius:12px;overflow:hidden}
+.stat-pill{text-align:center;padding:28px 16px}
+.stat-pill-value{font-size:32px;font-weight:700;color:#fff;letter-spacing:-1px}
+.stat-pill-label{font-size:11px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+@media(max-width:768px){.stats-bar-inner{grid-template-columns:repeat(2,1fr)}}
+
 /* Cases Grid */
 .cases{max-width:1200px;margin:0 auto;padding:80px 30px}
 .cases-header{text-align:center;margin-bottom:60px}
 .cases-header h2{font-size:43px;font-weight:500;letter-spacing:-1.29px;margin-bottom:12px}
 .cases-header p{color:#666;font-size:15px;max-width:460px;margin:0 auto}
-
 .case-card{display:grid;grid-template-columns:1fr 1fr;gap:0;background:#F4F4F4;border-radius:12px;overflow:hidden;margin-bottom:40px;transition:transform 0.2s,box-shadow 0.2s}
 .case-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,0.08)}
 .case-card img{width:100%;height:340px;object-fit:cover;object-position:top;display:block}
@@ -51,24 +117,50 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
 .case-link{display:inline-flex;align-items:center;gap:8px;color:#0865FC;font-weight:500;font-size:14px;text-decoration:none;transition:gap 0.2s}
 .case-link:hover{gap:12px}
 .case-link svg{width:16px;height:16px}
-@media(max-width:768px){.case-card{grid-template-columns:1fr}.case-card img{min-height:220px}}
+@media(max-width:768px){.case-card{grid-template-columns:1fr}.case-card img{height:220px}.case-info{padding:32px 24px}}
 
 /* CTA Section */
 .cta-section{background:#F4F4F4;padding:100px 30px;text-align:center}
 .cta-section h2{font-size:43px;font-weight:500;letter-spacing:-1.29px;margin-bottom:16px}
 .cta-section p{color:#666;max-width:440px;margin:0 auto 36px;font-size:15px}
 
-/* Footer - matches localhowl.com */
-.footer{background:#1D1D1D;color:#fff;padding:60px 30px 40px}.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1.2fr 1fr 1fr 1fr;gap:40px}.footer-brand .footer-logo{height:28px;width:auto;margin-bottom:24px;display:block}.footer-desc{color:#999;font-size:13px;line-height:1.8;margin-bottom:24px}.btn-outline-footer{display:inline-block;border:1.5px solid #444;color:#fff;padding:12px 24px;border-radius:8px;font-size:13px;text-decoration:none;font-weight:400}.btn-outline-footer:hover{border-color:#fff}.footer-social{display:flex;gap:16px;margin-top:24px}.footer-social a{color:#888;transition:color .2s}.footer-social a:hover{color:#fff}.footer-copy{margin-top:24px;font-size:12px;color:#555}.footer-col h4{font-size:14px;font-weight:600;margin-bottom:20px;color:#fff}.footer-col a{display:block;color:#999;font-size:13px;text-decoration:none;margin-bottom:12px;transition:color .2s}.footer-col a:hover{color:#fff}.footer-contact .contact-item{display:flex;gap:12px;margin-bottom:24px;align-items:flex-start}.footer-contact .contact-item svg{margin-top:2px;flex-shrink:0}.contact-label{font-size:12px;color:#888;margin-bottom:2px}.contact-value{font-size:14px;font-weight:600;color:#fff}@media(max-width:768px){.footer-inner{grid-template-columns:1fr 1fr;gap:32px}}
+/* Scroll animations */
+.fade-up{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+
+/* Footer */
+.footer{background:#1D1D1D;color:#fff;padding:60px 30px 40px}
+.footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1.2fr 1fr 1fr 1fr;gap:40px}
+.footer-brand .footer-logo{height:28px;width:auto;margin-bottom:24px;display:block}
+.footer-desc{color:#999;font-size:13px;line-height:1.8;margin-bottom:24px}
+.btn-outline-footer{display:inline-block;border:1.5px solid #444;color:#fff;padding:12px 24px;border-radius:8px;font-size:13px;text-decoration:none;font-weight:400;transition:border-color .2s}
+.btn-outline-footer:hover{border-color:#fff}
+.footer-social{display:flex;gap:16px;margin-top:24px}
+.footer-social a{color:#888;transition:color .2s}
+.footer-social a:hover{color:#fff}
+.footer-copy{margin-top:24px;font-size:12px;color:#555}
+.footer-col h4{font-size:14px;font-weight:600;margin-bottom:20px;color:#fff}
+.footer-col a{display:block;color:#999;font-size:13px;text-decoration:none;margin-bottom:12px;transition:color .2s}
+.footer-col a:hover{color:#fff}
+.footer-contact .contact-item{display:flex;gap:12px;margin-bottom:24px;align-items:flex-start}
+.footer-contact .contact-item svg{margin-top:2px;flex-shrink:0}
+.contact-label{font-size:12px;color:#888;margin-bottom:2px}
+.contact-value{font-size:14px;font-weight:600;color:#fff}
+@media(max-width:768px){.footer-inner{grid-template-columns:1fr 1fr;gap:32px}}
 </style>
 </head>
 <body>
 
-<nav class="nav">
+<a href="#main" class="skip-nav">Skip to content</a>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
   <div class="nav-inner">
     <a href="https://www.localhowl.com" class="nav-logo">
-      <img src="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=400" alt="Local Howl">
+      <img src="https://framerusercontent.com/images/ymROyfiNe6B41eqp8bzeZyyG6o.png?width=400" alt="Local Howl" width="140" height="36">
     </a>
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="const n=document.querySelector('.nav-links');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
     <div class="nav-links">
       <a href="https://www.localhowl.com/#services">Services</a>
       <a href="https://www.localhowl.com/plans">Plans</a>
@@ -79,6 +171,8 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
   </div>
 </nav>
 
+<main id="main">
+
 <section class="hero">
   <h1>Client <span>Success</span> Stories</h1>
   <p>Real transformations. Real results. See what happens when local businesses partner with Local Howl.</p>
@@ -88,14 +182,23 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
   </div>
 </section>
 
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-pill"><div class="stat-pill-value">22</div><div class="stat-pill-label">Sites Built</div></div>
+    <div class="stat-pill"><div class="stat-pill-value">10</div><div class="stat-pill-label">Industries</div></div>
+    <div class="stat-pill"><div class="stat-pill-value">21</div><div class="stat-pill-label">Design Archetypes</div></div>
+    <div class="stat-pill"><div class="stat-pill-value">100%</div><div class="stat-pill-label">Custom Builds</div></div>
+  </div>
+</div>
+
 <section class="cases" id="cases">
   <div class="cases-header">
     <h2>Featured Projects</h2>
     <p>Every business is different. Here's how we tailored our approach to deliver results.</p>
   </div>
 
-  <div class="case-card">
-    <img src="after.png" alt="Margo West Bridal Couture - redesigned luxury website">
+  <div class="case-card fade-up">
+    <img src="after.png" alt="Margo West Bridal Couture - redesigned luxury website" width="1440" height="900" loading="lazy">
     <div class="case-info">
       <span class="case-badge">Website Redesign</span>
       <h3>Margo West Bridal Couture</h3>
@@ -108,8 +211,8 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
     </div>
   </div>
 
-  <div class="case-card">
-    <img src="neuage-after.png" alt="NEUAGE Health + Wellness - redesigned multi-location WordPress site">
+  <div class="case-card fade-up">
+    <img src="neuage-after.png" alt="NEUAGE Health + Wellness - redesigned multi-location WordPress site" width="1440" height="900" loading="lazy">
     <div class="case-info">
       <span class="case-badge">Platform Migration</span>
       <h3>NEUAGE Health + Wellness</h3>
@@ -122,8 +225,8 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
     </div>
   </div>
 
-  <div class="case-card">
-    <img src="spineworks-after.png" alt="The Spine Works - custom-built chiropractic website">
+  <div class="case-card fade-up">
+    <img src="spineworks-after.png" alt="The Spine Works - custom-built chiropractic website" width="1440" height="900" loading="lazy">
     <div class="case-info">
       <span class="case-badge">Full Rebrand + Build</span>
       <h3>The Spine Works</h3>
@@ -143,7 +246,15 @@ body{font-family:'Poppins',sans-serif;color:#141414;font-size:14px;line-height:1
   <a href="https://www.localhowl.com/#contact" class="btn-blue">Request A FREE AUDIT</a>
 </section>
 
-<footer class="footer"><div class="footer-inner"><div class="footer-brand"><img src="https://framerusercontent.com/images/RfIYk4LS5YOOc19N0Dv7lU1Y.png?scale-down-to=512" alt="Local Howl" class="footer-logo"><p class="footer-desc">Local Howl helps local businesses show up where it counts, on Google, in the Map Pack, and in front of ready-to-book customers. Let's help your business get discovered.</p><a href="https://www.localhowl.com/#contact" class="btn-outline-footer">Book A Discovery Call</a><div class="footer-social"><a href="#" aria-label="Google"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 110-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0012.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z"/></svg></a><a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div><div class="footer-copy">&copy; 2026 Local Howl, All Rights Reserved.</div></div><div class="footer-col footer-contact"><h4>Quick Contact</h4><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div><div class="contact-label">Phone number</div><div class="contact-value">+1 856 280 9614</div></div></div><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg><div><div class="contact-label">Email Address</div><div class="contact-value">info@localhowl.com</div></div></div><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><div class="contact-label">Office Hours</div><div class="contact-value">Monday-Friday<br>9AM - 9PM (EST)</div></div></div></div><div class="footer-col"><h4>Services</h4><a href="#">Keyword Research</a><a href="#">Maps & GBP Optimization</a><a href="#">Local Citations</a><a href="#">Online Reputation Management</a><a href="#">Competitor Analysis</a><a href="#">Domain Authority Growth</a><a href="#">Tracking & Analytics</a></div><div class="footer-col"><h4>Company</h4><a href="https://www.localhowl.com/plans">Plans & Pricing</a><a href="#">Help & FAQs</a><a href="#">News & Media</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a></div><div class="footer-col"><h4>Howl IQ</h4><a href="#">Local SEO Audit</a><a href="#">Citation Audit</a><a href="#">AI Ready Tool</a><a href="#">Ask Howl IQ</a><a href="#">ROI Calculator</a></div></div></footer>
+</main>
+
+<footer class="footer" role="contentinfo"><div class="footer-inner"><div class="footer-brand"><img src="https://framerusercontent.com/images/RfIYk4LS5YOOc19N0Dv7lU1Y.png?scale-down-to=512" alt="Local Howl" class="footer-logo" width="180" height="28"><p class="footer-desc">Local Howl helps local businesses show up where it counts, on Google, in the Map Pack, and in front of ready-to-book customers. Let's help your business get discovered.</p><a href="https://www.localhowl.com/#contact" class="btn-outline-footer">Book A Discovery Call</a><div class="footer-social"><a href="#" aria-label="Google"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.545 10.239v3.821h5.445c-.712 2.315-2.647 3.972-5.445 3.972a6.033 6.033 0 110-12.064c1.498 0 2.866.549 3.921 1.453l2.814-2.814A9.969 9.969 0 0012.545 2C7.021 2 2.543 6.477 2.543 12s4.478 10 10.002 10c8.396 0 10.249-7.85 9.426-11.748l-9.426-.013z"/></svg></a><a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a><a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a></div><div class="footer-copy">&copy; 2026 Local Howl, All Rights Reserved.</div></div><div class="footer-col footer-contact"><h4>Quick Contact</h4><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><div><div class="contact-label">Phone number</div><div class="contact-value">+1 856 280 9614</div></div></div><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg><div><div class="contact-label">Email Address</div><div class="contact-value">info@localhowl.com</div></div></div><div class="contact-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0865FC" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><div class="contact-label">Office Hours</div><div class="contact-value">Monday-Friday<br>9AM - 9PM (EST)</div></div></div></div><div class="footer-col"><h4>Services</h4><a href="#">Keyword Research</a><a href="#">Maps & GBP Optimization</a><a href="#">Local Citations</a><a href="#">Online Reputation Management</a><a href="#">Competitor Analysis</a><a href="#">Domain Authority Growth</a><a href="#">Tracking & Analytics</a></div><div class="footer-col"><h4>Company</h4><a href="https://www.localhowl.com/plans">Plans & Pricing</a><a href="#">Help & FAQs</a><a href="#">News & Media</a><a href="#">Contact Us</a><a href="#">Privacy Policy</a></div><div class="footer-col"><h4>Howl IQ</h4><a href="#">Local SEO Audit</a><a href="#">Citation Audit</a><a href="#">AI Ready Tool</a><a href="#">Ask Howl IQ</a><a href="#">ROI Calculator</a></div></div></footer>
+
+<script>
+// Scroll fade-in
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+</script>
 
 </body>
 </html>

@@ -1,0 +1,19 @@
+# Local Howl - Client Success Stories
+> Case studies showcasing website redesigns, platform migrations, and full rebrands by Local Howl.
+
+## About Local Howl
+Local Howl is a local SEO and web design agency that helps local businesses show up on Google, in the Map Pack, and in front of ready-to-book customers. 22 production builds across 10 industries.
+
+## Pages
+- [Home](https://success.localhowl.com/) - Index of all client case studies
+- [Margo West Bridal Couture](https://success.localhowl.com/margo-west) - Website redesign: Divi template to luxury couture atelier (Dallas, TX)
+- [NEUAGE Health + Wellness](https://success.localhowl.com/neuage-health-wellness) - Platform migration: Duda SPA to WordPress multi-location franchise (MO, KS, FL, AL)
+- [The Spine Works](https://success.localhowl.com/the-spine-works) - Full rebrand: Stronghold Health Beaver Builder template to custom conversion-optimized chiropractic site (Nashville, TN)
+
+## Key Facts
+- 22 production website builds
+- 10 industries served
+- Services: Local SEO, website design, GBP optimization, citation management, competitor analysis, reputation management
+- Tech stack: WordPress, Elementor, WP Engine, custom HTML/CSS, Vercel
+- Contact: info@localhowl.com | +1 856 280 9614
+- Main site: https://www.localhowl.com
