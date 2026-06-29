@@ -9,6 +9,7 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [Margo West Bridal Couture](https://success.localhowl.com/margo-west) - Website redesign: Divi template to luxury couture atelier (Dallas, TX)
 - [NEUAGE Health + Wellness](https://success.localhowl.com/neuage-health-wellness) - Platform migration: Duda SPA to WordPress multi-location franchise (MO, KS, FL, AL)
 - [The Spine Works](https://success.localhowl.com/the-spine-works) - Full rebrand: Stronghold Health Beaver Builder template to custom conversion-optimized chiropractic site (Nashville, TN)
+- [Reborn Roofing](https://success.localhowl.com/reborn-roofing) - New build + local SEO: replaced an outdated site with an AI-ready WordPress build ranking across the Memphis metro (Collierville, TN)
 
 ## Key Facts
 - 22 production website builds
