@@ -11,6 +11,7 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [The Spine Works](https://success.localhowl.com/the-spine-works) - Full rebrand: Stronghold Health Beaver Builder template to custom conversion-optimized chiropractic site (Nashville, TN)
 - [Reborn Roofing](https://success.localhowl.com/reborn-roofing) - New build + local SEO: replaced an outdated site with an AI-ready WordPress build ranking across the Memphis metro (Collierville, TN)
 - [Hearthstone Luxury Pool + Outdoors](https://success.localhowl.com/hsl-pools) - Platform migration: aging WordPress/Elementor template to a fast, AI-ready custom luxury pool builder site ranking across the Atlanta metro (Marietta, GA)
+- [Moore Law Center](https://success.localhowl.com/moore-law-center) - Full rebuild + local SEO: generic criminal-defense site to a credibility-first WordPress/Elementor build with attorney bios, practice-area pages, and county landing pages across metro Atlanta (Marietta, GA)
 
 ## Key Facts
 - 22 production website builds
