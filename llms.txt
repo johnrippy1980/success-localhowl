@@ -13,6 +13,7 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [Hearthstone Luxury Pool + Outdoors](https://success.localhowl.com/hsl-pools) - Platform migration: aging WordPress/Elementor template to a fast, AI-ready custom luxury pool builder site ranking across the Atlanta metro (Marietta, GA)
 - [Moore Law Center](https://success.localhowl.com/moore-law-center) - Full rebuild + local SEO: generic criminal-defense site to a credibility-first WordPress/Elementor build with attorney bios, practice-area pages, and county landing pages across metro Atlanta (Marietta, GA)
 - [Air Control Services](https://success.localhowl.com/air-control-services) - New build + local SEO: generic template to a fast custom-coded HVAC site with 7 service pages and 20 city pages ranking across Las Cruces and southern New Mexico (Las Cruces, NM)
+- [Commercial Electric Motor Service](https://success.localhowl.com/cemsi) - New build + local SEO: aging template to a fast custom-coded electric motor sales and repair site with a photo-to-match motor finder, full category pages, and 6 Metro East city pages for a family-owned shop in business since 1944 (St. Louis, MO)
 
 ## Key Facts
 - 22 production website builds
