@@ -19,6 +19,7 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [Penny Window](https://success.localhowl.com/penny-window) - New build + local SEO: Next.js rebuild with 45 style, service, and city URLs, AI-agent-ready lead capture, and the real 4.1-star, 207-review Google rating for a window and door company in business since 1953 (St. Louis, MO)
 - [Wraps Redefined](https://success.localhowl.com/wraps-redefined) - New build + local SEO: showroom-dark WordPress build with live Instagram and Google-review feeds, 34 URLs, and a perfect 5.0-star, 93-review rating for a 3M-certified wrap and PPF studio (Dallas, TX)
 - [Fixins Roofing & Restoration](https://success.localhowl.com/fixins-roofing) - New build + local SEO: keyword-stuffed Duda template to a fast custom-coded 76-page build with 21 service-area pages, an awards page for nine 2026 Best of the Springs wins, and verified RoofingContractor schema for a veteran-owned contractor (Colorado Springs, CO)
+- [Coastal Roofworks](https://success.localhowl.com/coastal-roofworks) - New build + local SEO: stock-photo Scorpion template to a client-editable 66-page WordPress build with English and Spanish pages, 13 service-area pages, and verified RoofingContractor schema carrying a 5.0-star, 31-review rating for a roofing crew serving the Georgia coast since 2006 (Savannah, GA)
 
 ## Key Facts
 - 22 production website builds
