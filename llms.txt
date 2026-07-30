@@ -14,6 +14,10 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [Moore Law Center](https://success.localhowl.com/moore-law-center) - Full rebuild + local SEO: generic criminal-defense site to a credibility-first WordPress/Elementor build with attorney bios, practice-area pages, and county landing pages across metro Atlanta (Marietta, GA)
 - [Air Control Services](https://success.localhowl.com/air-control-services) - New build + local SEO: generic template to a fast custom-coded HVAC site with 7 service pages and 20 city pages ranking across Las Cruces and southern New Mexico (Las Cruces, NM)
 - [Commercial Electric Motor Service](https://success.localhowl.com/cemsi) - New build + local SEO: aging template to a fast custom-coded electric motor sales and repair site with a photo-to-match motor finder, full category pages, and 6 Metro East city pages for a family-owned shop in business since 1944 (St. Louis, MO)
+- [Bryan Lawn Care](https://success.localhowl.com/bryan-lawn-care) - New build + local SEO: fast custom-coded 26-page site with 14 service pages and neighborhood pages for a family-run lawn crew serving Nashville since 2001 with a 4.8-star, 106-review rating (Nashville, TN)
+- [Miami Smile Dental](https://success.localhowl.com/miami-smile-dental) - New build + local SEO: boutique multilingual WordPress site with a 106-URL architecture, a Spanish homepage plus ten translated primary pages, and a verified 4.9-star, 233-review Dentist schema (Pinecrest, FL)
+- [Penny Window](https://success.localhowl.com/penny-window) - New build + local SEO: Next.js rebuild with 45 style, service, and city URLs, AI-agent-ready lead capture, and the real 4.1-star, 207-review Google rating for a window and door company in business since 1953 (St. Louis, MO)
+- [Wraps Redefined](https://success.localhowl.com/wraps-redefined) - New build + local SEO: showroom-dark WordPress build with live Instagram and Google-review feeds, 34 URLs, and a perfect 5.0-star, 93-review rating for a 3M-certified wrap and PPF studio (Dallas, TX)
 
 ## Key Facts
 - 22 production website builds
