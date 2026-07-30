@@ -18,6 +18,7 @@ Local Howl is a local SEO and web design agency that helps local businesses show
 - [Miami Smile Dental](https://success.localhowl.com/miami-smile-dental) - New build + local SEO: boutique multilingual WordPress site with a 106-URL architecture, a Spanish homepage plus ten translated primary pages, and a verified 4.9-star, 233-review Dentist schema (Pinecrest, FL)
 - [Penny Window](https://success.localhowl.com/penny-window) - New build + local SEO: Next.js rebuild with 45 style, service, and city URLs, AI-agent-ready lead capture, and the real 4.1-star, 207-review Google rating for a window and door company in business since 1953 (St. Louis, MO)
 - [Wraps Redefined](https://success.localhowl.com/wraps-redefined) - New build + local SEO: showroom-dark WordPress build with live Instagram and Google-review feeds, 34 URLs, and a perfect 5.0-star, 93-review rating for a 3M-certified wrap and PPF studio (Dallas, TX)
+- [Fixins Roofing & Restoration](https://success.localhowl.com/fixins-roofing) - New build + local SEO: keyword-stuffed Duda template to a fast custom-coded 76-page build with 21 service-area pages, an awards page for nine 2026 Best of the Springs wins, and verified RoofingContractor schema for a veteran-owned contractor (Colorado Springs, CO)
 
 ## Key Facts
 - 22 production website builds
